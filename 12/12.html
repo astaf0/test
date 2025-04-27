@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMDb</title>
+  <link rel="stylesheet" href="12.css">
+</head>
+<body>
+  <h2>Искать:</h2>
+
+  <form id="searchForm">
+    <div class="input">
+      <label for="movieTitle">Название</label>
+      <input type="text" id="movieTitle" name="s" required>
+    </div>
+
+    <div class="input">
+      <label for="movieType">Тип</label>
+      <select id="movieType" name="type">
+        <option value="movie">Фильм</option>
+        <option value="series">Сериал</option>
+        <option value="episode">Эпизод</option>
+      </select>
+    </div>
+  
+  <button type="submit">Искать</button>
+  </form>
+
+  <div id="movieList"></div>
+  <div class="pagination" id="pagination"></div>
+  <div id="movieDetails" class="movieDetails" style="display: none;"></div>
+
+  <script src="12.js"></script>
+</body>
+</html>

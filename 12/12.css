@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    width: 400px;
+    height: max-content;
+    border: 4px solid silver;
+    border-radius: 5pt;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+select {
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+button {
+    height: 30px;
+    cursor: pointer;
+}
+
+img {
+    width: max-content;
+    height: 200px;
+    max-width: 200px;
+}
+
+.movieItem {
+    height: max-content;
+    border: 1px solid silver;
+    border-radius: 5pt;
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+}
+
+.about-movie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#movieList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 100px;
+    gap: 30px;
+}
+
+.gray-text {
+    color: #aaa;
+    font-weight: 600;
+}
+
+.details-div {
+    border: 1px solid silver;
+    border-radius: 7pt;
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 30px; 
+    width: 700px; 
+}
+
+.movieDetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+
+.details-div img {
+    width: max-content;
+    height: 300px;
+    max-width: 200px;
+}
+
+.pagination button {
+    margin: 2px 5px;
+    padding: 5px 10px;
+}
